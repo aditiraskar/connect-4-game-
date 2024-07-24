@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Connect Four</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div id="GameChoiceScreen" class="overlay">
+		<div class="overlaybtns">
+			<button class="gameChoiceBtns" id="Human" onclick="closeOverlay(this.id)">Human</button>
+			<button class="gameChoiceBtns" id="Computer" onclick="closeOverlay(this.id)">Computer</button>
+		</div>
+	</div>
+	<button id="reset" type="button" onclick="resetGame()">Reset Game</button>
+	<h1>Turn: <span id="Player"></span> </h1>
+	<div id="centre_wrapper">
+		<table id="board">
+			<tbody></tbody>
+		</table>
+	</div>
+</body>
+</html>
